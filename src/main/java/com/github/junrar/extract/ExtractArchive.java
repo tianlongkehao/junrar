@@ -25,6 +25,11 @@ public class ExtractArchive {
 		this.logger = logger;
 	}
 	
+	/**
+	 * 
+	 * @param archive
+	 * @param destination
+	 */
 	public void extractArchive(File archive, File destination) {
 		Archive arch = null;
 		try {

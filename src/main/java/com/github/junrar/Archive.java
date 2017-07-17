@@ -109,6 +109,12 @@ public class Archive implements Closeable {
 		dataIO = new ComprDataIO(this);
 	}
 
+	/**
+	 * 
+	 * @param firstVolume
+	 * @throws RarException
+	 * @throws IOException
+	 */
 	public Archive(File firstVolume) throws RarException, IOException {
 		this(new FileVolumeManager(firstVolume), null);
 	}
